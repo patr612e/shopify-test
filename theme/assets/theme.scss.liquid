@@ -1,0 +1,123 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+/* Fonts */
+$font-header: Cardo, 'Helvetica Neue', Helvetica, sans-serif;
+$font-body: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+
+/* Colours */
+$colour-primary: #2e3b47;
+$colour-grey: #ccc;
+$colour-white: #fff;
+
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-body;
+  color: $colour-primary;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+/* Typography */
+a, a:active, a:hover, a:visited {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-header;
+  font-weight: normal;
+  line-height: 1.25;
+  color: $colour-primary;
+  display: inline-block;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+img, picture {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* Containers */
+.main {}
+
+.container {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+/* Mini cart */
+.miniCart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  display: block;
+  border-left: 1px solid $colour-grey;
+  border-bottom: 1px solid $colour-grey;
+  background-color: $colour-white;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.miniCart_icon,
+.miniCart_count {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.miniCart_icon {
+  max-height: 17px;
+  height: 100%;
+  width: auto;
+
+  @media (min-width: 768px) {
+    max-height: 30px;
+  }
+}
+
+.miniCart_count {
+  font-size: 1.2rem;
+  margin-left: 5px;
+
+  @media (min-width: 768px) {
+    font-size: 1.6rem;
+  }
+}
+
+/* Collection hero */
+.collectionHero {}
+
+/* Product List */
+.productList {}
+
+/* Product Card */
+.productCard {}
