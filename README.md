@@ -100,4 +100,5 @@ To complete this test.
 Helpful links
 --------
 [Liquid documentation](https://shopify.dev/docs/themes/liquid/reference)
+
 [Liquid cheatsheet by Shopify](https://www.shopify.com/partners/shopify-cheat-sheet)
