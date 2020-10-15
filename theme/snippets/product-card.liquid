@@ -1,2 +1,26 @@
 {% comment %} Product card {% endcomment %}
-<div class="productCard"></div>
+{%- assign cart_icon = 'icon-shopping-cart.png' -%}
+
+
+<div class="productCard" data-id="{{ product.id }}">
+    <img src="{{ product.featured_image | img_url: '600x600' }}" alt="{{ product.featured_image.alt }}"/>
+
+
+    {% product.title %}
+
+    {% assign title = product.title | split: ' ' %}
+
+    {% for word in title %}
+        {{ word }}
+    {% endfor %}
+
+
+    <div class="product-info">
+        <div class="product-name">Name</div>
+        <div class="product-cart">
+            <img src="{{cart_icon}}" alt="">
+        </div>
+        <div class="product-color">Color</div>
+        <div class="product-size">Size</div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+development:
+  password: "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"
+  theme_id: "83847544929"
+  store: beefy-miracle.myshopify.com
+  timeout: 30s
