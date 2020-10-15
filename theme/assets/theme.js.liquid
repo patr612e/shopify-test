@@ -1,14 +1,21 @@
+// do stuff after dom is loaded
+
 window.addEventListener("DOMContentLoaded", () => {
-  const cart = document.querySelectorAll(".product-cart img");
-  console.log(cart);
-});
+  const cart_icon = document.querySelectorAll(".product-cart img");
+  // add event listener to all cart icons
+  cart_icon.forEach(icon => {
+    icon.addEventListener("click", updateCart);
+  });
 
-function addToCart() {
-  console.log("hey");
-}
+  function updateCart() {
+    // get product id from parent
+    const productId = event.target.parentElement.parentElement.parentElement.getAttribute("data-id");
+    console.log(productId);
+    // update counter
 
-// addToCart();
-
-window.addEventListener("resize", function() {
-  console.log("Screen size changed!");
+    let cart_ui = document.querySelector(".miniCart_count").textContent;
+    parseInt(cart_ui);
+    cart_ui++;
+    document.querySelector(".miniCart_count").textContent = cart_ui;
+  }
 });

@@ -13,6 +13,9 @@
             {% endfor %}
 
         </div>
+        <div class="pagination-controls">
+            {{ paginate | default_pagination: next: 'Next', previous: 'Previous' }}
+        </div>
     {% endpaginate %}
 
 </section>
